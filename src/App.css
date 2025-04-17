@@ -1,0 +1,142 @@
+:root{
+  --ff-primary: "Outfit", sans-serif; 
+  --ff-secondary: "Young Serif", serif; 
+
+  --clr-neutral: hsl(0, 0%, 100%); 
+
+  --clr-stone-100: hsl(30, 54%, 90%);
+  --clr-stone-150: hsl(30, 18%, 87%); 
+  --clr-stone-600: hsl(30, 10%, 34%); 
+  --clr-stone-900: hsl(24, 5%, 18%); 
+
+  --clr-brown-800: hsl(14, 45%, 36%); 
+
+  --clr-rose-800: hsl(332, 52%, 32%); 
+  --clr-rose-50: hsl(330, 100%, 98%);
+  
+  --fw-regular: 400; 
+  --fw-semi-bold: 600; 
+  --fw-bold: 700; 
+
+  color: var(--clr-stone-600);
+
+}
+
+#root{
+  background-color: var(--clr-neutral);
+  max-width: 40rem;
+}
+
+@media (min-width: 30rem){
+  #root{
+    overflow: hidden;
+    border-radius: 20px;
+    margin-inline: auto;
+  }
+
+  .recipe_image{
+    border-radius: 30px;
+    padding: 1rem; 
+  }
+}
+
+.information{
+  padding-inline: 1.5rem;
+}
+
+h1{
+  font-size: 2.2rem; 
+  color: var(--clr-stone-900);
+  font-weight: var(--fw-bold); 
+}
+
+li{
+  margin-bottom: 0.5rem;
+}
+
+ul, ol{
+  padding: 0;   
+}
+
+ul li, ol li{
+  margin-inline-start: 1rem;
+}
+
+
+ul li span{
+  margin-inline-start: 1rem;
+}
+
+ol li{
+  padding-inline-start: 1rem;
+}
+
+ul li::marker{
+  font-size: 0.675rem;
+}
+
+ol li::marker{
+  color: var(--clr-brown-800); 
+  font-weight: var(--fw-semi-bold);
+}
+
+.recipe_prep_time{
+  background-color: var(--clr-rose-50);
+  padding: 1rem;
+}
+
+.recipe_prep_time span{
+  color: var(--clr-rose-800);
+  font-weight: var(--fw-bold);
+}
+
+
+.recipe_prep_time ul li::marker{
+  color: var(--clr-rose-800);
+}
+
+.recipe_ingredients ul li::marker{
+  color: var(--clr-brown-800);
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table tr td:nth-child(2){
+  color: var(--clr-brown-800);
+  font-weight: var(--fw-bold);
+  padding-inline-start: 5rem;
+}
+
+table tr td{
+  padding-block: 0.5rem;
+}
+
+
+table tr:not(:nth-child(4)){
+  border-bottom: 1px solid var(--clr-stone-150);
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* utility classes */
+
+.bold{
+  font-weight: var(--fw-bold);
+}
+
+.ff-secondary{
+  font-family: var(--ff-secondary);
+}
+
+.c-red{
+  color: var(--clr-brown-800);
+  font-weight: var(--fw-bold);
+  font-size: 1.785rem; 
+}
